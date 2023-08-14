@@ -8,7 +8,7 @@ export const Menu = ({ menu }) => {
 	const menuList = menu;
 	// console.log(menuList);
 
-	const [selected, setSelected] = useState('entrantes');
+	const [selected, setSelected] = useState('');
 	const [active, setActive] = useState(false);
 
 	function onSelect(type) {
