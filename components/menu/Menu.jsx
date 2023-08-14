@@ -5,7 +5,8 @@ import { Modal } from './Modal';
 import MenuType from './MenuType';
 
 export const Menu = ({ menu }) => {
-	const menuList = menu.menu;
+	const menuList = menu;
+	// console.log(menuList);
 
 	const [selected, setSelected] = useState('entrantes');
 	const [active, setActive] = useState(false);
@@ -17,7 +18,7 @@ export const Menu = ({ menu }) => {
 
 	const menuSelectedData = menuList.filter((m) => m.type === selected);
 	const menuSelected = menuSelectedData[0];
-	// console.log(menuSelected);
+	console.log(menuSelected);
 
 	return (
 		<div>

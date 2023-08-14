@@ -1,9 +1,9 @@
 import { Menu } from '@/components/menu/Menu';
-import getMenu from '@/libs/getMenu';
 import React from 'react';
+import { menuData } from '../api/data';
 
-export default async function MenuPage() {
-	const menu = await getMenu();
+export default function MenuPage() {
+	const menu = menuData;
 
 	return (
 		<div className='max-w-lg mx-auto p-2 text-slate-200'>

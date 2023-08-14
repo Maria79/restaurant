@@ -1,7 +1,7 @@
-import getHorario from '@/libs/getHorario';
+import { horarioData } from '../api/data';
 
 export default async function HorarioPage() {
-	const horario = await getHorario();
+	const horario = horarioData;
 
 	return (
 		<div className='max-w-md mx-auto mt-8 text-slate-200'>
