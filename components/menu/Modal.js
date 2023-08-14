@@ -1,7 +1,6 @@
 import React from 'react';
 
 export const Modal = ({ menuSelected }) => {
-	console.log(menuSelected.platos);
 	const platos = menuSelected.platos;
 
 	return (

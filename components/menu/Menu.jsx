@@ -8,7 +8,7 @@ export const Menu = ({ menu }) => {
 	const menuList = menu;
 	// console.log(menuList);
 
-	const [selected, setSelected] = useState('');
+	const [selected, setSelected] = useState('entrantes');
 	const [active, setActive] = useState(false);
 
 	function onSelect(type) {
@@ -18,7 +18,6 @@ export const Menu = ({ menu }) => {
 
 	const menuSelectedData = menuList.filter((m) => m.type === selected);
 	const menuSelected = menuSelectedData[0];
-	console.log(menuSelected);
 
 	return (
 		<div>
